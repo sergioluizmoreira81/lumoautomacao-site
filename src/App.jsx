@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const WA_LINK =
-  'https://wa.me/5541991790947?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Lumo%20Automa%C3%A7%C3%A3o!'
+  'https://wa.me/554191790947?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Lumo%20Automa%C3%A7%C3%A3o!'
 
 function WhatsAppIcon({ className = 'w-5 h-5' }) {
   return (
@@ -523,7 +523,7 @@ export default function App() {
               className="flex w-full items-center justify-center gap-3 rounded-2xl bg-[#25d366] px-8 py-5 text-lg font-bold text-white shadow-lg shadow-green-500/20 transition-all hover:bg-[#1ebe5d] hover:shadow-green-500/40 hover:-translate-y-0.5 sm:w-auto"
             >
               <WhatsAppIcon className="w-6 h-6" />
-              (41) 99179-0947
+              (41) 9179-0947
             </a>
             <a
               href="https://instagram.com/lumoautomacao"
