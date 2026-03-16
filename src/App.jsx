@@ -25,8 +25,7 @@ export default function App() {
   const navLinks = [
     { href: '#sobre', label: 'Sobre' },
     { href: '#servicos', label: 'Serviços' },
-    { href: '#beneficios', label: 'Benefícios' },
-    { href: '#projetos', label: 'Projetos' },
+    { href: '#clientes', label: 'Clientes' },
     { href: '#contato', label: 'Contato' },
   ]
 
@@ -34,7 +33,7 @@ export default function App() {
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
         </svg>
       ),
       title: 'Qualidade Premium',
@@ -42,7 +41,7 @@ export default function App() {
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H4a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2h-1m-6 0a2 2 0 002 2H9a2 2 0 002-2m0 0V5" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H4a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2h-1m-6 0a2 2 0 002 2H9a2 2 0 002-2m0 0V5" />
         </svg>
       ),
       title: 'Automação Inteligente',
@@ -50,7 +49,7 @@ export default function App() {
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
       title: 'Alta Complexidade',
@@ -58,7 +57,7 @@ export default function App() {
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
       title: 'Execução Profissional',
@@ -67,101 +66,41 @@ export default function App() {
 
   const servicos = [
     {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      ),
+      emoji: '⚡',
       title: 'Projetos e Instalações Elétricas',
-      description: 'Equipe especializada para executar o projeto do bruto ao acabamento fino.',
+      description: 'Do bruto ao acabamento fino com precisão e excelência',
     },
     {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.536 8.464a5 5 0 010 7.072M12 18.364l-4.243-4.243a8 8 0 010-11.314L12 6.05l4.243-4.243a8 8 0 010 11.314L12 17.121" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 9a3 3 0 104.243 4.243L12 12l-2.121-2.121A3 3 0 009 9z" />
-        </svg>
-      ),
+      emoji: '🏠',
+      title: 'Automação Residencial e Predial',
+      description: 'Controle completo de sistemas com tecnologia de ponta',
+    },
+    {
+      emoji: '🎵',
       title: 'Sistemas de Áudio e Vídeo',
-      description: 'Sonorização de ambientes, salas de cinema e home theater com tecnologia de ponta.',
+      description: 'Sonorização, home theater e salas de cinema',
     },
     {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
-      ),
-      title: 'Integração com Segurança',
-      description: 'Conexão inteligente com sistemas de segurança e energia solar.',
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
-      title: 'Controle de Máquinas',
-      description: 'Automação de equipamentos industriais e comerciais com eficiência e precisão.',
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-        </svg>
-      ),
+      emoji: '💡',
       title: 'Iluminação Profissional',
-      description: 'Design de iluminação personalizada para destacar arquitetura e valorizar ambientes.',
+      description: 'Design de iluminação que valoriza arquitetura e ambientes',
     },
     {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 7h3M3 12h4M3 17h3" />
-        </svg>
-      ),
+      emoji: '🔒',
+      title: 'Integração e Segurança',
+      description: 'Sistemas de segurança integrados à automação e energia solar',
+    },
+    {
+      emoji: '🔌',
       title: 'Carregadores Veiculares',
-      description: 'Instalação profissional de carregadores para veículos elétricos em residências e empresas.',
+      description: 'Instalação profissional para veículos elétricos',
     },
   ]
 
-  const beneficios = [
-    {
-      icon: (
-        <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      title: 'Economia de Energia',
-      description: 'Gestão inteligente e eficiência energética que reduzem custos operacionais.',
-    },
-    {
-      icon: (
-        <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-        </svg>
-      ),
-      title: 'Design e Tecnologia',
-      description: 'Estética e funcionalidade integradas em cada projeto com identidade exclusiva.',
-    },
-    {
-      icon: (
-        <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-        </svg>
-      ),
-      title: 'Projetos Sob Medida',
-      description: 'Soluções personalizadas para cada cliente, do residencial ao industrial.',
-    },
-    {
-      icon: (
-        <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-        </svg>
-      ),
-      title: 'Resultado Completo',
-      description: 'Iluminação que valoriza arquitetura e ambientes, entregando a experiência final ideal.',
-    },
+  const stats = [
+    { number: '100+', label: 'Projetos entregues' },
+    { number: 'BR', label: 'Todo o Brasil' },
+    { number: '100%', label: 'Satisfação garantida' },
   ]
 
   const clientes = [
@@ -174,19 +113,23 @@ export default function App() {
     { name: 'OX Room Steakhouse', detail: 'Restaurante' },
     { name: 'ELIXIR', detail: 'Restaurant & Lounge Bar' },
     { name: 'Its Curitiba', detail: 'Espaço Múltiplo' },
-    { name: 'Residências', detail: 'Alto Padrão' },
+    { name: 'Residências Premium', detail: 'Alto Padrão' },
   ]
 
   return (
-    <div className="min-h-screen bg-[#0a0a14] text-white">
+    <div className="min-h-screen bg-[#0B0B0B] text-[#F5F5F5]">
 
-      {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-white/[0.08] bg-[#0a0a14]/90 backdrop-blur-xl">
+      {/* ── HEADER ── */}
+      <header className="sticky top-0 z-50 bg-[#0B0B0B]/95 backdrop-blur-xl border-b border-[#2A2A2A]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
+
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2">
-            <span className="text-2xl font-black tracking-tight text-[#a78bfa]">Lumo</span>
-            <span className="hidden text-xs font-medium uppercase tracking-widest text-slate-400 sm:block">
+          <a href="#home" className="flex items-center gap-3">
+            <span className="text-2xl font-black tracking-widest text-[#F5F5F5]">LUMO</span>
+            <span
+              className="hidden text-[10px] font-semibold uppercase tracking-[0.2em] sm:block"
+              style={{ color: '#D4AF37' }}
+            >
               Automação
             </span>
           </a>
@@ -197,7 +140,7 @@ export default function App() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-slate-400 transition-colors hover:text-white"
+                className="text-sm font-medium tracking-wide text-[#9FA3A7] transition-all duration-300 hover:text-[#D4AF37]"
               >
                 {link.label}
               </a>
@@ -209,10 +152,9 @@ export default function App() {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden items-center gap-2 rounded-full bg-[#25d366] px-5 py-2.5 text-sm font-bold text-white transition-all hover:bg-[#1ebe5d] hover:shadow-lg hover:shadow-green-500/25 md:flex"
+            className="hidden items-center gap-2 rounded-full border border-[#D4AF37]/60 px-5 py-2.5 text-sm font-bold text-[#F5F5F5] transition-all duration-300 hover:border-[#D4AF37] hover:text-[#D4AF37] md:flex"
           >
-            <WhatsAppIcon />
-            WhatsApp
+            Solicitar Orçamento
           </a>
 
           {/* Hamburger Mobile */}
@@ -222,33 +164,30 @@ export default function App() {
             aria-label="Menu"
           >
             <span
-              className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
-                menuOpen ? 'translate-y-2 rotate-45' : ''
-              }`}
+              className="block h-px w-6 bg-[#F5F5F5] transition-all duration-300"
+              style={{ transform: menuOpen ? 'translateY(8px) rotate(45deg)' : '' }}
             />
             <span
-              className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
-                menuOpen ? 'opacity-0' : ''
-              }`}
+              className="block h-px w-6 bg-[#F5F5F5] transition-all duration-300"
+              style={{ opacity: menuOpen ? 0 : 1 }}
             />
             <span
-              className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
-                menuOpen ? '-translate-y-2 -rotate-45' : ''
-              }`}
+              className="block h-px w-6 bg-[#F5F5F5] transition-all duration-300"
+              style={{ transform: menuOpen ? 'translateY(-8px) rotate(-45deg)' : '' }}
             />
           </button>
         </div>
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="border-t border-white/[0.08] bg-[#0a0a14] px-6 py-4 md:hidden">
-            <nav className="flex flex-col gap-4">
+          <div className="border-t border-[#2A2A2A] bg-[#0B0B0B] px-6 py-6 md:hidden">
+            <nav className="flex flex-col gap-5">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="text-base font-medium text-slate-300 transition-colors hover:text-white"
+                  className="text-base font-medium text-[#9FA3A7] transition-colors hover:text-[#D4AF37]"
                 >
                   {link.label}
                 </a>
@@ -257,270 +196,325 @@ export default function App() {
                 href={WA_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 flex items-center justify-center gap-2 rounded-full bg-[#25d366] px-5 py-3 font-bold text-white"
+                className="mt-2 flex items-center justify-center gap-2 rounded-full border border-[#D4AF37]/60 px-5 py-3.5 font-bold text-[#F5F5F5]"
               >
-                <WhatsAppIcon />
-                Fale pelo WhatsApp
+                Solicitar Orçamento
               </a>
             </nav>
           </div>
         )}
       </header>
 
-      {/* HERO */}
-      <section
-        id="home"
-        className="relative overflow-hidden px-6 py-24 md:px-10 md:py-36"
-      >
-        {/* Glow background */}
+      {/* ── HERO ── */}
+      <section id="home" className="relative min-h-screen flex items-center overflow-hidden px-6 py-24 md:px-10">
+
+        {/* Decorative glow */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="absolute -left-40 -top-40 h-96 w-96 rounded-full bg-[#a78bfa]/10 blur-3xl" />
-          <div className="absolute -right-40 top-1/2 h-96 w-96 rounded-full bg-[#a78bfa]/8 blur-3xl" />
+          <div
+            className="absolute -top-60 left-1/2 -translate-x-1/2 h-[600px] w-[600px] rounded-full blur-[120px] opacity-10"
+            style={{ background: 'radial-gradient(circle, #D4AF37, transparent)' }}
+          />
         </div>
 
-        <div className="relative mx-auto max-w-5xl text-center">
-          <span className="mb-6 inline-block rounded-full border border-[#a78bfa]/40 bg-[#a78bfa]/10 px-5 py-2 text-xs font-semibold uppercase tracking-widest text-[#a78bfa]">
-            Automação Elétrica
-          </span>
+        <div className="relative mx-auto max-w-5xl w-full text-center">
 
-          <h1 className="mb-6 text-4xl font-black leading-tight tracking-tight md:text-6xl lg:text-7xl">
-            Automação e Elétrica{' '}
-            <span className="text-[#a78bfa]">de Alto Padrão</span>
+          {/* Label */}
+          <p
+            className="mb-8 text-xs font-semibold uppercase tracking-[0.3em]"
+            style={{ color: '#D4AF37' }}
+          >
+            Automação Elétrica de Alto Padrão
+          </p>
+
+          {/* Título principal */}
+          <h1 className="mb-8 text-5xl font-black leading-[1.05] tracking-tight md:text-7xl lg:text-8xl">
+            Sofisticação que transforma{' '}
+            <br className="hidden md:block" />
+            energia em{' '}
+            <span
+              className="inline-block"
+              style={{
+                background: 'linear-gradient(135deg, #C9A24A, #D4AF37, #F2D27A)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
+              arte.
+            </span>
           </h1>
 
-          <p className="mx-auto mb-4 max-w-2xl text-lg text-slate-400 md:text-xl">
-            Entregando soluções completas e excelência em cada projeto.
-          </p>
-          <p className="mx-auto mb-10 max-w-2xl text-base text-slate-500">
-            Ciclo completo desde o planejamento até a operação final.
+          {/* Linha dourada decorativa */}
+          <div
+            className="mx-auto mb-8 h-px w-32"
+            style={{ background: 'linear-gradient(to right, transparent, #D4AF37, transparent)' }}
+          />
+
+          {/* Subtítulo */}
+          <p className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-[#9FA3A7] md:text-xl">
+            Automação e elétrica de alto padrão.{' '}
+            <span className="text-[#B8B8B8]">Ciclo completo desde o projeto até a operação.</span>
           </p>
 
+          {/* CTAs */}
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full bg-[#25d366] px-8 py-4 text-base font-bold text-white shadow-lg shadow-green-500/20 transition-all hover:bg-[#1ebe5d] hover:shadow-green-500/40 hover:-translate-y-0.5"
+              className="flex items-center gap-2 rounded-full px-8 py-4 text-base font-bold text-[#0B0B0B] transition-all duration-300 hover:-translate-y-0.5"
+              style={{ background: 'linear-gradient(135deg, #C9A24A, #D4AF37)' }}
             >
               <WhatsAppIcon />
               Solicitar Orçamento
             </a>
             <a
               href="#servicos"
-              className="rounded-full border border-[#a78bfa]/40 bg-[#a78bfa]/10 px-8 py-4 text-base font-semibold text-[#a78bfa] transition-all hover:bg-[#a78bfa]/20"
+              className="rounded-full border border-[#D4AF37]/60 px-8 py-4 text-base font-semibold text-[#F5F5F5] transition-all duration-300 hover:border-[#D4AF37] hover:text-[#D4AF37]"
             >
               Conhecer Serviços
             </a>
           </div>
 
           {/* 4 Diferenciais */}
-          <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4">
+          <div className="mt-20 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {diferenciais.map((d) => (
               <div
                 key={d.title}
-                className="flex flex-col items-center gap-3 rounded-2xl border border-white/[0.08] bg-white/[0.03] p-5 backdrop-blur-sm transition-all hover:border-[#a78bfa]/30 hover:bg-[#a78bfa]/5"
+                className="flex flex-col items-center gap-3 rounded-2xl border border-[#2A2A2A] bg-[#111111] p-5 transition-all duration-300 hover:border-[#D4AF37]/40"
               >
-                <span className="text-[#a78bfa]">{d.icon}</span>
-                <span className="text-center text-sm font-semibold text-white">{d.title}</span>
+                <span style={{ color: '#D4AF37' }}>{d.icon}</span>
+                <span className="text-center text-sm font-semibold text-[#F5F5F5]">{d.title}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* SOBRE / MISSÃO */}
-      <section id="sobre" className="px-6 py-20 md:px-10 md:py-28">
-        <div className="mx-auto max-w-5xl">
-          <div className="grid items-center gap-12 md:grid-cols-2">
+      {/* ── SOBRE ── */}
+      <section id="sobre" className="bg-[#111111] px-6 py-24 md:px-10 md:py-32">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid items-center gap-16 md:grid-cols-2">
+
+            {/* Esquerda — texto */}
             <div>
-              <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-widest text-[#a78bfa]">
+              <p
+                className="mb-4 text-xs font-semibold uppercase tracking-[0.3em]"
+                style={{ color: '#D4AF37' }}
+              >
                 Quem somos
-              </span>
-              <h2 className="mb-6 text-3xl font-black tracking-tight md:text-4xl">
-                Planejar, integrar e{' '}
-                <span className="text-[#a78bfa]">controlar</span> sistemas
-                elétricos
-              </h2>
-              <p className="mb-6 leading-relaxed text-slate-400">
-                A <strong className="text-white">Lumo Automação Elétrica</strong>, liderada por{' '}
-                <strong className="text-white">Lucas Sbrissia</strong>, atua com eficiência,
-                segurança e inteligência em cada etapa — desde o projeto até a operação final.
               </p>
-              <p className="leading-relaxed text-slate-400">
-                Nosso compromisso é entregar excelência técnica com identidade exclusiva,
-                transformando espaços residenciais, comerciais e industriais por todo o Brasil.
+              <h2 className="mb-6 text-3xl font-black leading-tight tracking-tight text-[#F5F5F5] md:text-5xl">
+                Planejar, integrar e controlar com excelência
+              </h2>
+              {/* Linha decorativa */}
+              <div
+                className="mb-8 h-px w-20"
+                style={{ background: 'linear-gradient(to right, #D4AF37, transparent)' }}
+              />
+              <p className="mb-6 leading-relaxed text-[#9FA3A7]">
+                A <strong className="text-[#F5F5F5]">Lumo Automação Elétrica</strong>, liderada por{' '}
+                <strong className="text-[#F5F5F5]">Lucas Sbrissia</strong>, desenvolve soluções
+                tecnológicas para promover conforto e segurança para todos.
+              </p>
+              <p className="leading-relaxed text-[#9FA3A7]">
+                Nosso foco é planejar, integrar e controlar sistemas elétricos com eficiência,
+                segurança e inteligência — do projeto à operação final, em todo o Brasil.
               </p>
             </div>
 
-            <div className="rounded-3xl border border-white/[0.08] bg-white/[0.03] p-8">
-              <div className="mb-4 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#a78bfa]/20">
-                  <svg className="h-5 w-5 text-[#a78bfa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+            {/* Direita — 4 diferenciais em cards */}
+            <div className="grid grid-cols-2 gap-4">
+              {diferenciais.map((d) => (
+                <div
+                  key={d.title}
+                  className="rounded-2xl border border-[#2A2A2A] bg-[#0B0B0B] p-6 transition-all duration-300 hover:border-[#D4AF37]/40"
+                >
+                  <div
+                    className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl"
+                    style={{ background: 'rgba(212,175,55,0.1)' }}
+                  >
+                    <span style={{ color: '#D4AF37' }}>{d.icon}</span>
+                  </div>
+                  <p className="text-sm font-bold text-[#F5F5F5]">{d.title}</p>
                 </div>
-                <span className="text-sm font-semibold uppercase tracking-wider text-[#a78bfa]">
-                  Nossa Missão
-                </span>
-              </div>
-              <blockquote className="text-xl font-semibold leading-relaxed text-white">
-                "Desenvolver soluções tecnológicas para promover{' '}
-                <span className="text-[#a78bfa]">conforto e segurança</span> para todos."
-              </blockquote>
-              <div className="mt-6 flex items-center gap-3 border-t border-white/[0.08] pt-6">
-                <div className="h-10 w-10 rounded-full bg-[#a78bfa]/20 flex items-center justify-center text-sm font-bold text-[#a78bfa]">
-                  LS
-                </div>
-                <div>
-                  <div className="text-sm font-semibold text-white">Lucas Sbrissia</div>
-                  <div className="text-xs text-slate-500">Fundador — Lumo Automação</div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* SERVIÇOS */}
-      <section id="servicos" className="px-6 py-20 md:px-10 md:py-28">
+      {/* ── SERVIÇOS ── */}
+      <section id="servicos" className="bg-[#0B0B0B] px-6 py-24 md:px-10 md:py-32">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-14 text-center">
-            <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-widest text-[#a78bfa]">
+
+          {/* Cabeçalho */}
+          <div className="mb-16 text-center">
+            <p
+              className="mb-4 text-xs font-semibold uppercase tracking-[0.3em]"
+              style={{ color: '#D4AF37' }}
+            >
               O que fazemos
-            </span>
-            <h2 className="text-3xl font-black tracking-tight md:text-4xl">
+            </p>
+            <h2 className="text-3xl font-black tracking-tight text-[#F5F5F5] md:text-5xl">
               Serviços Especializados
             </h2>
-            <p className="mt-4 text-slate-400">
-              Soluções completas do projeto à operação
-            </p>
+            <div
+              className="mx-auto mt-6 h-px w-24"
+              style={{ background: 'linear-gradient(to right, transparent, #D4AF37, transparent)' }}
+            />
           </div>
 
+          {/* Grid de serviços */}
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {servicos.map((s) => (
               <div
                 key={s.title}
-                className="group rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 transition-all duration-300 hover:border-[#a78bfa]/40 hover:bg-[#a78bfa]/5 hover:-translate-y-1"
+                className="group rounded-2xl border border-[#2A2A2A] bg-[#111111] p-8 transition-all duration-300 hover:border-[#D4AF37]/40 hover:-translate-y-1"
               >
-                <span className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#a78bfa]/10 text-[#a78bfa] transition-colors group-hover:bg-[#a78bfa]/20">
-                  {s.icon}
-                </span>
-                <h3 className="mb-3 text-lg font-bold text-white">{s.title}</h3>
-                <p className="text-sm leading-relaxed text-slate-400">{s.description}</p>
+                <div className="mb-5 text-4xl">{s.emoji}</div>
+                <h3 className="mb-3 text-lg font-bold text-[#F5F5F5]">{s.title}</h3>
+                <p className="text-sm leading-relaxed text-[#9FA3A7]">{s.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* BENEFÍCIOS */}
-      <section id="beneficios" className="px-6 py-20 md:px-10 md:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-14 text-center">
-            <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-widest text-[#a78bfa]">
-              Por que escolher a Lumo
-            </span>
-            <h2 className="text-3xl font-black tracking-tight md:text-4xl">
-              Benefícios que Fazem a Diferença
-            </h2>
-          </div>
-
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {beneficios.map((b) => (
-              <div
-                key={b.title}
-                className="group rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 text-center transition-all duration-300 hover:border-[#a78bfa]/40 hover:bg-[#a78bfa]/5"
-              >
-                <span className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#a78bfa]/10 text-[#a78bfa] transition-colors group-hover:bg-[#a78bfa]/20">
-                  {b.icon}
+      {/* ── STATS ── */}
+      <section
+        className="px-6 py-20 md:px-10 md:py-28"
+        style={{ background: 'linear-gradient(135deg, #0B0B0B 0%, #111008 50%, #0B0B0B 100%)' }}
+      >
+        <div className="mx-auto max-w-4xl">
+          <div className="grid grid-cols-1 gap-12 text-center sm:grid-cols-3">
+            {stats.map((s) => (
+              <div key={s.label} className="flex flex-col items-center gap-2">
+                <span
+                  className="text-5xl font-black md:text-6xl"
+                  style={{
+                    background: 'linear-gradient(135deg, #C9A24A, #D4AF37, #F2D27A)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
+                  {s.number}
                 </span>
-                <h3 className="mb-2 font-bold text-white">{b.title}</h3>
-                <p className="text-sm leading-relaxed text-slate-400">{b.description}</p>
+                <span className="text-sm font-medium uppercase tracking-widest text-[#9FA3A7]">
+                  {s.label}
+                </span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* PROJETOS / CLIENTES */}
-      <section id="projetos" className="px-6 py-20 md:px-10 md:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-14 text-center">
-            <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-widest text-[#a78bfa]">
+      {/* ── CLIENTES ── */}
+      <section id="clientes" className="bg-[#111111] px-6 py-24 md:px-10 md:py-32">
+        <div className="mx-auto max-w-5xl">
+
+          {/* Cabeçalho */}
+          <div className="mb-16 text-center">
+            <p
+              className="mb-4 text-xs font-semibold uppercase tracking-[0.3em]"
+              style={{ color: '#D4AF37' }}
+            >
               Portfólio
-            </span>
-            <h2 className="text-3xl font-black tracking-tight md:text-4xl">
-              Projetos Realizados
+            </p>
+            <h2 className="text-3xl font-black tracking-tight text-[#F5F5F5] md:text-5xl">
+              Quem Confia na Lumo
             </h2>
-            <p className="mt-4 text-slate-400">
-              Empresas e residências que confiam na Lumo
+            <div
+              className="mx-auto mt-6 h-px w-24"
+              style={{ background: 'linear-gradient(to right, transparent, #D4AF37, transparent)' }}
+            />
+            <p className="mt-6 text-[#9FA3A7]">
+              Marcas e residências de alto padrão em todo o Brasil
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          {/* Tags de clientes */}
+          <div className="flex flex-wrap justify-center gap-3">
             {clientes.map((c) => (
               <div
                 key={c.name}
-                className="group rounded-xl border border-white/[0.08] bg-white/[0.03] p-4 text-center transition-all duration-300 hover:border-[#a78bfa]/40 hover:bg-[#a78bfa]/5"
+                className="rounded-full border border-[#D4AF37]/25 bg-[#0B0B0B] px-5 py-2.5 transition-all duration-300 hover:border-[#D4AF37]/60"
               >
-                <div className="mb-1 text-sm font-bold text-white">{c.name}</div>
-                <div className="text-xs text-slate-500">{c.detail}</div>
+                <span className="text-sm font-semibold text-[#F5F5F5]">{c.name}</span>
+                <span className="ml-2 text-xs text-[#9FA3A7]">{c.detail}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ABRANGÊNCIA */}
-      <section className="px-6 py-20 md:px-10 md:py-24">
-        <div className="mx-auto max-w-4xl">
-          <div className="overflow-hidden rounded-3xl border border-[#a78bfa]/20 bg-gradient-to-br from-[#a78bfa]/10 to-[#a78bfa]/5 p-10 text-center md:p-16">
-            <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-[#a78bfa]/20">
-              <svg className="h-8 w-8 text-[#a78bfa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <h2 className="mb-4 text-3xl font-black tracking-tight md:text-4xl">
-              Atendemos em Todo o{' '}
-              <span className="text-[#a78bfa]">Brasil</span>
-            </h2>
-            <p className="mx-auto max-w-xl text-lg text-slate-400">
-              Do sul ao norte do país, a Lumo leva automação e elétrica de alto padrão
-              para residências, restaurantes, bares, hotéis e indústrias.
-            </p>
-            <a
-              href={WA_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#25d366] px-8 py-4 font-bold text-white shadow-lg shadow-green-500/20 transition-all hover:bg-[#1ebe5d] hover:-translate-y-0.5"
-            >
-              <WhatsAppIcon />
-              Fale com a Lumo
-            </a>
-          </div>
+      {/* ── ABRANGÊNCIA ── */}
+      <section className="bg-[#0B0B0B] px-6 py-24 md:px-10 md:py-32">
+        <div className="mx-auto max-w-4xl text-center">
+          <p
+            className="mb-6 text-xs font-semibold uppercase tracking-[0.3em]"
+            style={{ color: '#D4AF37' }}
+          >
+            Abrangência
+          </p>
+          <h2 className="mb-6 text-3xl font-black tracking-tight text-[#F5F5F5] md:text-5xl lg:text-6xl">
+            Atendemos em todo o Brasil
+          </h2>
+          {/* Linha decorativa */}
+          <div
+            className="mx-auto mb-8 h-px w-32"
+            style={{ background: 'linear-gradient(to right, transparent, #D4AF37, transparent)' }}
+          />
+          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-[#9FA3A7]">
+            Do sul ao norte do país, a Lumo leva automação e elétrica de alto padrão
+            para residências, restaurantes, bares, hotéis e espaços comerciais.
+          </p>
+          <a
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full px-8 py-4 text-base font-bold text-[#0B0B0B] transition-all duration-300 hover:-translate-y-0.5"
+            style={{ background: 'linear-gradient(135deg, #C9A24A, #D4AF37)' }}
+          >
+            <WhatsAppIcon />
+            Fale com a Lumo
+          </a>
         </div>
       </section>
 
-      {/* CONTATO */}
-      <section id="contato" className="px-6 py-20 md:px-10 md:py-28">
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-widest text-[#a78bfa]">
-            Contato
-          </span>
-          <h2 className="mb-4 text-3xl font-black tracking-tight md:text-4xl">
-            Pronto para Transformar{' '}
-            <span className="text-[#a78bfa]">seu Espaço?</span>
-          </h2>
-          <p className="mb-10 text-slate-400">
-            Entre em contato com a Lumo e receba um orçamento personalizado para o seu projeto.
-          </p>
+      {/* ── CONTATO ── */}
+      <section id="contato" className="bg-[#111111] px-6 py-24 md:px-10 md:py-32">
+        <div className="mx-auto max-w-3xl">
 
-          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          {/* Cabeçalho */}
+          <div className="mb-14 text-center">
+            <p
+              className="mb-4 text-xs font-semibold uppercase tracking-[0.3em]"
+              style={{ color: '#D4AF37' }}
+            >
+              Contato
+            </p>
+            <h2 className="mb-4 text-3xl font-black tracking-tight text-[#F5F5F5] md:text-5xl">
+              Pronto para elevar seu projeto?
+            </h2>
+            <div
+              className="mx-auto mt-6 h-px w-24"
+              style={{ background: 'linear-gradient(to right, transparent, #D4AF37, transparent)' }}
+            />
+            <p className="mt-6 text-[#9FA3A7]">
+              Entre em contato e receba um orçamento personalizado.
+            </p>
+          </div>
+
+          {/* Botões de contato */}
+          <div className="flex flex-col items-stretch gap-4 sm:flex-row sm:justify-center">
             <a
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-3 rounded-2xl bg-[#25d366] px-8 py-5 text-lg font-bold text-white shadow-lg shadow-green-500/20 transition-all hover:bg-[#1ebe5d] hover:shadow-green-500/40 hover:-translate-y-0.5 sm:w-auto"
+              className="flex items-center justify-center gap-3 rounded-2xl px-8 py-5 text-lg font-bold text-[#0B0B0B] transition-all duration-300 hover:-translate-y-0.5"
+              style={{ background: 'linear-gradient(135deg, #C9A24A, #D4AF37)' }}
             >
               <WhatsAppIcon className="w-6 h-6" />
               (41) 9179-0947
@@ -529,55 +523,68 @@ export default function App() {
               href="https://instagram.com/lumoautomacao"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-3 rounded-2xl border border-[#a78bfa]/40 bg-[#a78bfa]/10 px-8 py-5 text-lg font-bold text-[#a78bfa] transition-all hover:bg-[#a78bfa]/20 sm:w-auto"
+              className="flex items-center justify-center gap-3 rounded-2xl border border-[#D4AF37]/60 px-8 py-5 text-lg font-bold text-[#F5F5F5] transition-all duration-300 hover:border-[#D4AF37] hover:text-[#D4AF37]"
             >
               <InstagramIcon className="w-6 h-6" />
               @lumoautomacao
             </a>
           </div>
 
-          <div className="mt-10 rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6">
-            <p className="text-sm text-slate-400">
+          {/* Info block */}
+          <div className="mt-10 rounded-2xl border border-[#2A2A2A] bg-[#0B0B0B] p-6 text-center">
+            <p className="text-sm leading-relaxed text-[#9FA3A7]">
               Projetos residenciais, comerciais, industriais e hospitalidade.{' '}
-              <strong className="text-white">Lucas Sbrissia</strong> e a equipe Lumo estão
+              <strong className="text-[#F5F5F5]">Lucas Sbrissia</strong> e a equipe Lumo estão
               prontos para planejar, integrar e controlar o sistema ideal para o seu espaço.
             </p>
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="border-t border-white/[0.08] px-6 py-10 md:px-10">
+      {/* ── FOOTER ── */}
+      <footer
+        className="bg-[#0B0B0B] px-6 py-10 md:px-10"
+        style={{ borderTop: '1px solid #D4AF37' }}
+      >
         <div className="mx-auto max-w-6xl">
-          <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+          <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
+
+            {/* Logo + tagline */}
             <div className="text-center md:text-left">
-              <span className="text-xl font-black text-[#a78bfa]">Lumo</span>
-              <span className="ml-2 text-xs font-medium uppercase tracking-widest text-slate-500">
-                Automação Elétrica
-              </span>
-              <p className="mt-1 text-xs text-slate-600">
-                Qualidade Premium · Automação Inteligente · Todo o Brasil
+              <div className="flex items-center gap-3 justify-center md:justify-start">
+                <span className="text-xl font-black tracking-widest text-[#F5F5F5]">LUMO</span>
+                <span
+                  className="text-[10px] font-semibold uppercase tracking-[0.2em]"
+                  style={{ color: '#D4AF37' }}
+                >
+                  Automação Elétrica
+                </span>
+              </div>
+              <p className="mt-1 text-xs text-[#9FA3A7]">
+                Qualidade Premium · Todo o Brasil
               </p>
             </div>
 
+            {/* Nav */}
             <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-sm text-slate-500 transition-colors hover:text-white"
+                  className="text-sm text-[#9FA3A7] transition-colors hover:text-[#D4AF37]"
                 >
                   {link.label}
                 </a>
               ))}
             </nav>
 
-            <div className="flex items-center gap-4">
+            {/* Social icons */}
+            <div className="flex items-center gap-3">
               <a
                 href={WA_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#25d366]/10 text-[#25d366] transition-colors hover:bg-[#25d366]/20"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-[#2A2A2A] text-[#25d366] transition-all duration-300 hover:border-[#25d366]/40"
                 aria-label="WhatsApp"
               >
                 <WhatsAppIcon />
@@ -586,7 +593,7 @@ export default function App() {
                 href="https://instagram.com/lumoautomacao"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#a78bfa]/10 text-[#a78bfa] transition-colors hover:bg-[#a78bfa]/20"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-[#2A2A2A] text-[#9FA3A7] transition-all duration-300 hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
                 aria-label="Instagram"
               >
                 <InstagramIcon />
@@ -594,18 +601,19 @@ export default function App() {
             </div>
           </div>
 
-          <div className="mt-8 border-t border-white/[0.06] pt-6 text-center text-xs text-slate-600">
-            © {new Date().getFullYear()} Lumo Automação Elétrica. Todos os direitos reservados.
+          <div className="mt-8 border-t border-[#2A2A2A] pt-6 text-center text-xs text-[#9FA3A7]/50">
+            &copy; {new Date().getFullYear()} Lumo Automação Elétrica · lumoautomacao.com.br · Todos os direitos reservados.
           </div>
         </div>
       </footer>
 
-      {/* WHATSAPP FIXO */}
+      {/* ── WHATSAPP FLUTUANTE ── */}
       <a
         href={WA_LINK}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25d366] text-white shadow-2xl shadow-green-500/30 transition-all hover:scale-110 hover:bg-[#1ebe5d]"
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25d366] text-white shadow-2xl transition-all duration-300 hover:scale-110 hover:bg-[#1ebe5d]"
+        style={{ boxShadow: '0 8px 32px rgba(37,211,102,0.35)' }}
         aria-label="WhatsApp"
       >
         <WhatsAppIcon className="w-7 h-7" />
