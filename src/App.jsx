@@ -310,20 +310,20 @@ export default function App() {
       </section>
 
       {/* ════════ DIFERENCIAIS (strip) ════════ */}
-      <div className="border-y border-[#1E1E1E] bg-[#0D0D0D]">
+      <div className="border-y border-[#E8E8E8] bg-white">
         <div className="mx-auto max-w-7xl px-6 py-12 md:px-12">
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             {diferenciais.map((d) => (
               <div key={d.title} className="flex items-start gap-4">
                 <div
                   className="shrink-0 mt-0.5 flex h-12 w-12 items-center justify-center rounded-xl"
-                  style={{ background: 'rgba(212,175,55,0.08)', color: '#D4AF37' }}
+                  style={{ background: 'rgba(212,175,55,0.12)', color: '#C9A24A' }}
                 >
                   {d.icon}
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#F5F5F5] leading-snug">{d.title}</p>
-                  <p className="mt-1 text-xs leading-relaxed text-[#666]">{d.desc}</p>
+                  <p className="text-sm font-bold text-[#111111] leading-snug">{d.title}</p>
+                  <p className="mt-1 text-xs leading-relaxed text-[#888]">{d.desc}</p>
                 </div>
               </div>
             ))}
@@ -395,13 +395,13 @@ export default function App() {
       </section>
 
       {/* ════════ SERVIÇOS ════════ */}
-      <section id="servicos" className="bg-[#0D0D0D] px-6 py-24 md:px-12 md:py-32 border-y border-[#1A1A1A]">
+      <section id="servicos" className="bg-[#F8F8F8] px-6 py-24 md:px-12 md:py-32 border-y border-[#E8E8E8]">
         <div className="mx-auto max-w-6xl">
 
           {/* Cabeçalho */}
           <div className="mb-16 max-w-xl">
             <SectionLabel>O que fazemos</SectionLabel>
-            <h2 className="text-[clamp(1.9rem,4vw,3rem)] font-black leading-tight tracking-tight text-[#F5F5F5]">
+            <h2 className="text-[clamp(1.9rem,4vw,3rem)] font-black leading-tight tracking-tight text-[#111111]">
               Soluções especializadas para cada projeto.
             </h2>
             <GoldLine />
@@ -412,11 +412,11 @@ export default function App() {
             {servicos.map((s) => (
               <div
                 key={s.title}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-[#1E1E1E] bg-[#111111] transition-all duration-300 hover:border-[#D4AF37]/25 hover:-translate-y-1"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-[#E0E0E0] bg-white shadow-sm transition-all duration-300 hover:border-[#D4AF37]/40 hover:shadow-md hover:-translate-y-1"
               >
                 {/* Visual topo */}
                 <div className={`relative h-36 bg-gradient-to-br ${s.gradient} flex items-center justify-center`}>
-                  <span className="text-5xl opacity-70 group-hover:opacity-90 transition-opacity">{s.icon}</span>
+                  <span className="text-5xl opacity-80 group-hover:opacity-100 transition-opacity">{s.icon}</span>
                   {/* linha decorativa */}
                   <div
                     className="absolute bottom-0 left-0 right-0 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -425,14 +425,14 @@ export default function App() {
                 </div>
                 {/* Conteúdo */}
                 <div className="flex flex-col flex-1 p-7">
-                  <h3 className="mb-3 text-[15px] font-bold leading-snug text-[#F5F5F5]">{s.title}</h3>
+                  <h3 className="mb-3 text-[15px] font-bold leading-snug text-[#111111]">{s.title}</h3>
                   <p className="text-[13px] leading-[1.7] text-[#666]">{s.description}</p>
                   <div className="mt-auto pt-5">
                     <a
                       href={WA_LINK}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[12px] font-semibold text-[#D4AF37]/70 transition-colors duration-200 hover:text-[#D4AF37]"
+                      className="text-[12px] font-semibold text-[#C9A24A] transition-colors duration-200 hover:text-[#D4AF37]"
                     >
                       Solicitar →
                     </a>
@@ -471,17 +471,17 @@ export default function App() {
       </div>
 
       {/* ════════ CLIENTES ════════ */}
-      <section id="clientes" className="bg-[#0B0B0B] px-6 py-24 md:px-12 md:py-32">
+      <section id="clientes" className="bg-white px-6 py-24 md:px-12 md:py-32 border-y border-[#E8E8E8]">
         <div className="mx-auto max-w-5xl">
 
           {/* Cabeçalho */}
           <div className="mb-14 text-center">
             <SectionLabel>Portfólio</SectionLabel>
-            <h2 className="text-[clamp(1.9rem,4vw,3rem)] font-black tracking-tight text-[#F5F5F5]">
+            <h2 className="text-[clamp(1.9rem,4vw,3rem)] font-black tracking-tight text-[#111111]">
               Marcas que confiam na Lumo
             </h2>
             <GoldLine centered />
-            <p className="text-[14px] text-[#555]">
+            <p className="text-[14px] text-[#888]">
               Residências e negócios de alto padrão em todo o Brasil
             </p>
           </div>
@@ -491,14 +491,14 @@ export default function App() {
             {clientes.map((c) => (
               <div
                 key={c.name}
-                className="group flex items-center gap-2.5 rounded-full border border-[#1E1E1E] bg-[#0D0D0D] px-5 py-2.5 transition-all duration-300 hover:border-[#D4AF37]/30 hover:bg-[#111111]"
+                className="group flex items-center gap-2.5 rounded-full border border-[#E0E0E0] bg-[#F8F8F8] px-5 py-2.5 transition-all duration-300 hover:border-[#D4AF37]/50 hover:bg-white hover:shadow-sm"
               >
                 <span
                   className="h-1.5 w-1.5 rounded-full shrink-0 transition-colors duration-300 group-hover:bg-[#D4AF37]"
-                  style={{ background: '#333' }}
+                  style={{ background: '#CCC' }}
                 />
-                <span className="text-[13px] font-semibold text-[#D0D0D0]">{c.name}</span>
-                <span className="text-[11px] text-[#555]">{c.detail}</span>
+                <span className="text-[13px] font-semibold text-[#222]">{c.name}</span>
+                <span className="text-[11px] text-[#999]">{c.detail}</span>
               </div>
             ))}
           </div>
@@ -558,11 +558,11 @@ export default function App() {
       </section>
 
       {/* ════════ CONTATO ════════ */}
-      <section id="contato" className="bg-[#0B0B0B] px-6 py-24 md:px-12 md:py-32">
+      <section id="contato" className="bg-[#F8F8F8] px-6 py-24 md:px-12 md:py-32 border-y border-[#E8E8E8]">
         <div className="mx-auto max-w-2xl text-center">
 
           <SectionLabel>Contato</SectionLabel>
-          <h2 className="text-[clamp(1.9rem,4vw,2.8rem)] font-black leading-tight tracking-tight text-[#F5F5F5]">
+          <h2 className="text-[clamp(1.9rem,4vw,2.8rem)] font-black leading-tight tracking-tight text-[#111111]">
             Pronto para elevar o seu projeto?
           </h2>
           <GoldLine centered />
@@ -577,7 +577,7 @@ export default function App() {
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 rounded-2xl px-8 py-5 text-[15px] font-bold text-[#0B0B0B] transition-all duration-300 hover:opacity-90"
+              className="flex items-center justify-center gap-3 rounded-2xl px-8 py-5 text-[15px] font-bold text-white transition-all duration-300 hover:opacity-90"
               style={{ background: 'linear-gradient(135deg, #C9A24A, #D4AF37)' }}
             >
               <WhatsAppIcon className="w-5 h-5" />
@@ -587,7 +587,7 @@ export default function App() {
               href="https://instagram.com/lumoautomacao"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 rounded-2xl border border-[#222] bg-[#0D0D0D] px-8 py-5 text-[15px] font-bold text-[#C0C0C0] transition-all duration-300 hover:border-[#D4AF37]/30 hover:text-[#F5F5F5]"
+              className="flex items-center justify-center gap-3 rounded-2xl border border-[#DDDDDD] bg-white px-8 py-5 text-[15px] font-bold text-[#333] transition-all duration-300 hover:border-[#D4AF37]/50 hover:text-[#111]"
             >
               <InstagramIcon className="w-5 h-5" />
               @lumoautomacao
@@ -595,7 +595,7 @@ export default function App() {
           </div>
 
           {/* Info text */}
-          <p className="mt-10 text-[13px] leading-relaxed text-[#444]">
+          <p className="mt-10 text-[13px] leading-relaxed text-[#999]">
             Projetos residenciais, comerciais, industriais e de hospitalidade.{' '}
             <span className="text-[#666]">Lucas Sbrissia</span> e a equipe Lumo atendem em todo o Brasil.
           </p>
